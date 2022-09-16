@@ -34,6 +34,9 @@ spec:
         set -euxo pipefail
 
         cd /workspace/coreos
+
+        VERSION=$(basename $(readlink /workspace/coreos/builds/latest))
+        
         cosa push-container $(params.target-registry)/$(params.baseos-container-image-name):$(params.baseos-container-image-tag)
         cosa push-container --image=extensions-container $(params.target-registry)/$(params.extensions-container-image-name):$(params.extensions-container-image-tag)
 

@@ -6,9 +6,9 @@ spec:
   serviceAccountName: cosa-build-bot
   params:
     - name: repo
-      value: "https://github.com/openshift/os.git"
+      value: "https://github.com/LorbusChris/os.git"
     - name: branch
-      value: "master"
+      value: "debug"
     - name: variant
       value: "scos"     
     - name: version
@@ -20,11 +20,11 @@ spec:
     - name: baseos-container-image-name
       value: "centos-stream-coreos-9"
     - name: baseos-container-image-tag
-      value: devel
+      value: "4.12"
     - name: extensions-container-image-name
       value: "centos-stream-coreos-9-extensions"
     - name: extensions-container-image-tag
-      value: devel
+      value: "4.12"
   pipelineRef:
     name: okd-coreos-all
   timeouts:

@@ -5,9 +5,9 @@ metadata:
 spec:
   params:
     - name: repo
-      value: "https://github.com/openshift/os.git"
+      value: "https://github.com/LorbusChris/os.git"
     - name: branch
-      value: "master"
+      value: "debug"
     - name: variant
       value: "scos"     
     - name: version
@@ -24,4 +24,4 @@ spec:
             - ReadWriteOnce
           resources:
             requests:
-              storage: 5Gi
+              storage: 6Gi
